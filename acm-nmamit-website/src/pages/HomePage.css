@@ -1,0 +1,153 @@
+/* HomePage.css */
+
+.homepage-container {
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* Main text color changed to white */
+    background-color: #000; /* Set black background for the whole page */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #000000, #000000); /* Gradient background with blue shades */
+    color: #00BFFF; /* Text color in hero section */
+    text-align: center; /* Centered text */
+    padding: 5rem 1rem; /* Top/bottom padding */
+    border-bottom: 4px solid #fff; /* White border effect */
+    position: relative; /* Position for additional effects */
+    overflow: hidden; /* Hide overflow for animations */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Paragraph size */
+    margin-bottom: 2rem;
+}
+
+.explore-button {
+    background: #fff; /* Button background color */
+    color: #333; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Round button corners */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.explore-button:hover {
+    background: #00BFFF; /* Change background on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Program Section */
+.program-section {
+    padding: 3rem 1rem; /* Top/bottom padding */
+    text-align: center; /* Centered text */
+}
+
+.program-section h2 {
+    margin-bottom: 2rem; /* Spacing below heading */
+    font-size: 2rem; /* Heading size */
+    color: #1E90FF; /* Blue color for headings */
+}
+
+.programs-cards {
+    display: flex;
+    justify-content: center; /* Center cards */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 20px; /* Spacing between cards */
+}
+
+.program-card {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border: 2px solid transparent; /* Border with transition */
+    border-radius: 10px; /* Round card corners */
+    padding: 20px; /* Padding inside cards */
+    width: 250px; /* Fixed width */
+    text-align: center; /* Centered text */
+    transition: border 0.3s ease, transform 0.3s ease; /* Transition for border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.program-card:hover {
+    border: 2px solid #1E90FF; /* Change border color on hover */
+    transform: translateY(-5px); /* Raise card on hover */
+}
+
+.program-icon {
+    font-size: 3rem; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #1E90FF; /* Icon color */
+    transition: color 0.3s ease; /* Transition for color */
+}
+
+.program-card:hover .program-icon {
+    color: #fff; /* Change icon color to white on hover */
+}
+
+/* About Section */
+.about-nmam {
+    padding: 3rem 1rem; /* Top/bottom padding */
+    text-align: center; /* Centered text */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent light background for contrast */
+    border-radius: 10px; /* Round corners */
+    margin-top: 2rem; /* Space above */
+}
+
+.about-nmam h2 {
+    margin-bottom: 1rem; /* Spacing below heading */
+    font-size: 2rem; /* Heading size */
+    color: #1E90FF; /* Blue color for headings */
+}
+
+.about-nmam p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background: #333; /* Dark background */
+    color: #fff; /* Text color */
+    text-align: center; /* Centered text */
+    padding: 3rem 1rem; /* Top/bottom padding */
+    margin-top: 2rem; /* Spacing above */
+    border-radius: 10px; /* Round corners */
+}
+
+.call-to-action h2 {
+    margin-bottom: 1rem; /* Spacing below heading */
+}
+
+.join-button {
+    background: #1E90FF; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Round button corners */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.join-button:hover {
+    background: #00BFFF; /* Change background on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .programs-cards {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        align-items: center; /* Center cards */
+    }
+
+    .program-card {
+        width: 80%; /* Full width on mobile */
+    }
+}

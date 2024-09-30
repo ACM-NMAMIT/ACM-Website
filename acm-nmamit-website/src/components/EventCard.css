@@ -1,0 +1,92 @@
+/* EventCard.css */
+
+.event-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .event-card {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Background blur for glass effect */
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid transparent; /* Transparent border for animation */
+    position: relative; /* Needed for the border animation */
+    overflow: hidden; /* Prevents overflow */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transition for effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    border-color: #f9d62e; /* Change border color on hover */
+  }
+  
+  .event-icon-container {
+    font-size: 3rem; /* Increased icon size */
+    color: #f9d62e; /* Bright icon color */
+    margin-bottom: 1rem;
+    animation: pulse 1.5s infinite; /* Animation for the icon */
+  }
+  
+  .event-title {
+    font-size: 1.5rem; /* Title size */
+    margin: 1rem 0;
+    color: #f9d62e; /* Bright title color */
+  }
+  
+  .event-date {
+    font-size: 1rem; /* Date size */
+    color: #fff; /* White color for better contrast */
+  }
+  
+  .event-description {
+    font-size: 0.9rem; /* Description size */
+    color: #ddd; /* Light gray color for description */
+    margin: 1rem 0;
+  }
+  
+  .register-button {
+    background-color: #f9d62e; /* Button background */
+    color: #1a1a1a; /* Button text color */
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .register-button:hover {
+    background-color: #ffffff; /* Change background color on hover */
+    color: #1a1a1a; /* Dark text color */
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .event-title {
+      font-size: 1.2rem; /* Smaller title size for mobile */
+    }
+    
+    .event-description {
+      font-size: 0.8rem; /* Smaller description size for mobile */
+    }
+  
+    .event-card {
+      padding: 1.5rem; /* Adjust padding for mobile */
+    }
+  }
+  

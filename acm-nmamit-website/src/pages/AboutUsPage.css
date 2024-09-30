@@ -1,0 +1,144 @@
+/* AboutUsPage.css */
+
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Main text color */
+    padding: 2rem; /* Padding around the container */
+  }
+  
+  /* Header Section */
+  .about-us-header {
+    text-align: center; /* Centered text */
+    margin-bottom: 2rem; /* Spacing below the header */
+  }
+  
+  .about-us-header h1 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 1rem;
+    color: #f9d62e; /* Highlighted color */
+  }
+  
+  .about-us-header p {
+    font-size: 1.2rem; /* Paragraph size */
+    line-height: 1.6; /* Improved readability */
+  }
+  
+  /* Mission and Vision Section */
+  .mission-vision {
+    text-align: center; /* Centered text */
+    margin-bottom: 2rem; /* Spacing below section */
+  }
+  
+  .mission-vision h2 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 1rem; /* Spacing below heading */
+  }
+  
+  /* Core Values Section */
+  .core-values {
+    text-align: center; /* Centered text */
+    margin-bottom: 2rem; /* Spacing below section */
+  }
+  
+  .core-values h2 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 1rem; /* Spacing below heading */
+  }
+  
+  .values-cards {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center cards */
+    flex-wrap: wrap; /* Wrap on smaller screens */
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  .value-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border: 2px solid transparent; /* Border with transition */
+    border-radius: 10px; /* Round card corners */
+    padding: 20px; /* Padding inside cards */
+    width: 250px; /* Fixed width */
+    text-align: center; /* Centered text */
+    transition: border 0.3s ease, transform 0.3s ease; /* Transition for border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  .value-card:hover {
+    border: 2px solid #f9d62e; /* Change border color on hover */
+    transform: translateY(-5px); /* Raise card on hover */
+  }
+  
+  .value-icon {
+    font-size: 3rem; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #f9d62e; /* Icon color */
+    transition: color 0.3s ease; /* Transition for color */
+  }
+  
+  .value-card:hover .value-icon {
+    color: #333; /* Change icon color on hover */
+  }
+  
+  /* Get Involved Section */
+  .get-involved {
+    text-align: center; /* Centered text */
+    background: #f0f0f0; /* Light background for contrast */
+    padding: 2rem; /* Padding */
+    border-radius: 10px; /* Round corners */
+  }
+  
+  .get-involved h2 {
+    font-size: 2rem; /* Heading size */
+    margin-bottom: 1rem; /* Spacing below heading */
+  }
+  
+  .join-button {
+    background: #f9d62e; /* Button background color */
+    color: #333; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px; /* Round button corners */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+  }
+  
+  .join-button:hover {
+    background: #ffcc00; /* Change background on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .about-us-header h1 {
+      font-size: 2rem; /* Adjusted heading size for smaller screens */
+    }
+  
+    .about-us-header p {
+      font-size: 1rem; /* Adjusted paragraph size */
+    }
+  
+    .mission-vision h2, .core-values h2 {
+      font-size: 1.5rem; /* Adjusted heading size for smaller screens */
+    }
+  
+    .values-cards {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center cards */
+    }
+  
+    .value-card {
+      width: 90%; /* Full width on mobile */
+    }
+  
+    .join-button {
+      width: 100%; /* Full width button on mobile */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .values-cards {
+      justify-content: space-around; /* Adjust spacing on medium-sized screens */
+    }
+  }
+  

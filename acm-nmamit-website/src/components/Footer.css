@@ -1,0 +1,94 @@
+/* Footer.css */
+
+.footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* Default text color to white */
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-logo img {
+    width: 150px; /* Adjust logo size */
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin: 0 1rem;
+  }
+  
+  .footer-links a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #ffffff; /* Change link color on hover */
+  }
+  
+  .footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .footer-socials a {
+    color: #007bff; /* Blue for social icons */
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0.5rem 0;
+    color: #cccccc; /* Light gray for bottom text */
+  }
+  
+  .footer-credits a {
+    color: #007bff; /* Blue for credits link */
+    text-decoration: none;
+  }
+  
+  .footer-credits a:hover {
+    color: #ffffff; /* Change color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column; /* Stack links on small screens */
+      align-items: center;
+    }
+    
+    .footer-links li {
+      margin: 0.5rem 0; /* Space out links */
+    }
+  }
+  

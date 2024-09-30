@@ -1,0 +1,98 @@
+/* ContactForm.css */
+
+.contact-form-container {
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for a modern look */
+    backdrop-filter: blur(8px); /* Glassmorphism effect */
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 600px; /* Set a maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #f9d62e; /* Bright header color */
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+  }
+  
+  .form-group {
+    position: relative; /* Position for the icon */
+    margin-bottom: 1.5rem; /* Spacing between inputs */
+  }
+  
+  .form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%); /* Center the icon vertically */
+    color: #f9d62e; /* Icon color */
+    font-size: 1.2rem; /* Icon size */
+  }
+  
+  .form-input,
+  .form-textarea {
+    width: 100%;
+    padding: 10px 40px; /* Padding for the input */
+    border: none;
+    border-radius: 10px; /* Round input corners */
+    background: rgba(255, 255, 255, 0.2); /* Input background with transparency */
+    color: #fff; /* Input text color */
+    font-size: 1rem; /* Input text size */
+    transition: background 0.3s ease; /* Transition for background change */
+  }
+  
+  .form-input:focus,
+  .form-textarea:focus {
+    background: rgba(255, 255, 255, 0.4); /* Change background on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  .form-textarea {
+    height: 100px; /* Set height for the textarea */
+    resize: none; /* Disable resizing */
+  }
+  
+  .submit-button {
+    background-color: #f9d62e; /* Button background color */
+    color: #333; /* Button text color */
+    border: none;
+    border-radius: 10px; /* Round button corners */
+    padding: 12px; /* Button padding */
+    font-size: 1.1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Flex for icon and text alignment */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center content */
+    transition: transform 0.3s ease; /* Transition for button */
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  }
+  
+  .submit-icon {
+    margin-left: 10px; /* Space between text and icon */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-form-container {
+      padding: 1.5rem; /* Adjust padding for mobile */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+    }
+  
+    .submit-button {
+      font-size: 1rem; /* Smaller button text size */
+    }
+  }
+  

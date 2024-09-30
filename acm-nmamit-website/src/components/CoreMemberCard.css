@@ -1,0 +1,109 @@
+/* CoreMemberCard.css */
+
+.core-member-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 2rem;
+  }
+  
+  .member-card {
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Background blur for glass effect */
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    border: 2px solid transparent; /* Transparent border for animation */
+    position: relative; /* Needed for the border animation */
+    overflow: hidden; /* Prevents overflow */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Transition for effects */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    border-color: #f9d62e; /* Change border color on hover */
+  }
+  
+  .member-image-container {
+    position: relative; /* Needed for positioning hover effect */
+  }
+  
+  .member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Round image corners */
+    transition: transform 0.3s ease; /* Transition for image */
+  }
+  
+  .member-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  .hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: #fff;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition for overlay */
+  }
+  
+  .member-image-container:hover .hover-effect {
+    opacity: 1; /* Show overlay on image hover */
+  }
+  
+  .member-name {
+    font-size: 1.5rem; /* Name size */
+    margin: 0.5rem 0;
+    color: #f9d62e; /* Bright name color */
+  }
+  
+  .member-role {
+    font-size: 1rem; /* Role size */
+    color: #fff; /* White color for better contrast */
+  }
+  
+  .member-description {
+    font-size: 0.9rem; /* Description size */
+    color: #ddd; /* Light gray color for description */
+    margin: 1rem 0;
+  }
+  
+  .social-media-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icon {
+    font-size: 1.5rem; /* Icon size */
+    color: #f9d62e; /* Icon color */
+    transition: transform 0.3s ease; /* Transition for icon */
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1); /* Zoom effect on icon hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .member-name {
+      font-size: 1.2rem; /* Smaller name size for mobile */
+    }
+    
+    .member-description {
+      font-size: 0.8rem; /* Smaller description size for mobile */
+    }
+  
+    .member-card {
+      padding: 1rem; /* Adjust padding for mobile */
+    }
+  }
+  

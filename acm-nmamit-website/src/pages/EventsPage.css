@@ -1,0 +1,91 @@
+/* EventsPage.css */
+
+.events-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem; /* Padding around the container */
+    color: #333; /* Main text color */
+  }
+  
+  .events-header {
+    text-align: center; /* Centered text */
+    margin-bottom: 2rem; /* Spacing below header */
+  }
+  
+  .events-header h1 {
+    font-size: 2.5rem; /* Heading size */
+    margin-bottom: 1rem;
+    color: #f9d62e; /* Highlighted color */
+  }
+  
+  .events-header p {
+    font-size: 1.2rem; /* Paragraph size */
+    line-height: 1.6; /* Improved readability */
+  }
+  
+  /* Events List Section */
+  .events-list {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap cards */
+    justify-content: center; /* Center cards */
+    gap: 20px; /* Spacing between cards */
+  }
+  
+  /* Event Card Styles */
+  .event-card {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border: 2px solid transparent; /* Border with transition */
+    border-radius: 10px; /* Round card corners */
+    padding: 20px; /* Padding inside cards */
+    width: 250px; /* Fixed width */
+    text-align: center; /* Centered text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: border 0.3s ease, transform 0.3s ease; /* Transition for border and transform */
+  }
+  
+  .event-card:hover {
+    border: 2px solid #f9d62e; /* Change border color on hover */
+    transform: translateY(-5px); /* Raise card on hover */
+  }
+  
+  .event-icon {
+    font-size: 2.5rem; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+    color: #f9d62e; /* Icon color */
+    transition: color 0.3s ease; /* Transition for color */
+  }
+  
+  .event-card:hover .event-icon {
+    color: #333; /* Change icon color on hover */
+  }
+  
+  .event-title {
+    font-size: 1.5rem; /* Title size */
+    margin: 10px 0; /* Spacing around title */
+  }
+  
+  .event-date {
+    font-size: 1rem; /* Date size */
+    color: #666; /* Date color */
+    margin-bottom: 10px; /* Spacing below date */
+  }
+  
+  .event-description {
+    font-size: 1rem; /* Description size */
+    line-height: 1.5; /* Improved readability */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .events-header h1 {
+      font-size: 2rem; /* Adjusted heading size for smaller screens */
+    }
+  
+    .events-header p {
+      font-size: 1rem; /* Adjusted paragraph size */
+    }
+  
+    .event-card {
+      width: 90%; /* Full width on mobile */
+    }
+  }
+  
